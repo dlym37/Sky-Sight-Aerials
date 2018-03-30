@@ -28,20 +28,20 @@ class Header extends Component {
 
     render(){
         return (
-            <div>
+            <div onClick={this.openMenu}>
                 <div className='header'>
                     <img src={menuBtn} className='menu' alt='menu' onClick={this.openMenu}/>
-                    <img src={logo} className='logo' alt='logo'/>
+                    <Link to='/'><img src={logo} className='logo' alt='logo'/></Link>
                 </div>
                 <div className={this.state.open ? 'pop-out hidden' : 'pop-out'}>
                     <div className='navList'>
-                        <div>REAL ESTATE</div>
-                        <div>EVENTS</div>
-                        <div>WEDDINGS</div>
-                        <div>EXTREME SPORTS</div>
-                        <div>CONTACT US</div>
-                        <div>ABOUT US</div>
-                        <div>BLOG</div>
+                        <Link to='/RealEstate' className='nav-opt'> <div >REAL ESTATE</div></Link>
+                        <Link to='/Events' className='nav-opt'> <div>EVENTS</div></Link>
+                        <Link to='/Weddings' className='nav-opt'><div>WEDDINGS</div></Link>
+                        <Link to='/ExtremeSports' className='nav-opt'><div>EXTREME SPORTS</div></Link>
+                        <Link to='/Contact' className='nav-opt'><div>CONTACT US</div></Link>
+                        <Link to='/About' className='nav-opt'><div>ABOUT US</div></Link>
+                        <Link to='/Blog' className='nav-opt'><div>BLOG</div></Link>
                     </div>
                 </div>
             </div>

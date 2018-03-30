@@ -1,14 +1,18 @@
 .header {
     background-color: #222;
     width: 100%;
-    height: 100px;
+    height: 15vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .logo {
+    /* background-image: url('../../images/logo.PNG'); */
     height: 75px;
     width: 150px;
+    background: white;
+    opacity: .8;
+    border-radius: 10px;
 }
 .menu {
     height: 25px;
@@ -16,11 +20,11 @@
 }
 .pop-out {
     position: absolute;
-    top: 100px;
+    top: 15vh;
     left: -150px;
     height: 300px;
     width: 150px;
-    background-color: red;
+    background-color: #ec1c24;
     transition: .6s;
 }
 
@@ -29,6 +33,7 @@
     left : 0px;
 }
 .navList {
+    text-decoration: none;
     list-style-type: none;
     width: 100%;
     height: 100%;
@@ -36,7 +41,16 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    color: #222;
     font-weight: 700;
     font-size: 13px;
+}
+
+.nav-opt {
+    text-decoration: none;
+    color: #222;
+    
+}
+.nav-opt:hover {
+    transition: .4s;
+    color: white;
 }
