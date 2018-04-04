@@ -1,17 +1,18 @@
 .header {
     background-color: #222;
-    width: 100%;
+    width: 100% - 40px;
     height: 15vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0 20px;
 }
 .logo {
     /* background-image: url('../../images/logo.PNG'); */
     height: 75px;
     width: 150px;
     background: white;
-    opacity: .8;
+    /* opacity: .8; */
     border-radius: 10px;
 }
 .menu {
@@ -53,4 +54,29 @@
 .nav-opt:hover {
     transition: .4s;
     color: white;
+}
+.head-opt {
+    color: #ec1c24;
+    text-decoration: none;
+}
+.head-opt:hover {
+    transition: .4s;
+    color: white;
+}
+
+@media (min-width: 700px){
+    .menu {
+        display: none;
+    }
+}
+@media (min-width: 900px){
+    .header {
+        width: 100% - 200px;
+        padding: 0 100px;
+    }
+}
+@media (max-width: 700px) {
+    .head-opt {
+        display: none;
+    }
 }
